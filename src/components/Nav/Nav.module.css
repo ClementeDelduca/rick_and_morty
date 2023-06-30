@@ -21,6 +21,7 @@ nav img{
     padding: 10px;
     margin: 0px 15px;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .links:hover{

@@ -16,8 +16,16 @@ const styleGender = {
    display: "inline-block",
    fontSize: '16px',
    color: 'red',
-   //marginRight: '15px',
+   marginRight: '15px',
    marginTop: '-10px',
+}
+
+const styleGenders = {
+  display: "inline-block",
+  fontSize: '16px',
+  color: 'white',
+  marginRight: '15px',
+  marginTop: '-10px',
 }
 
 export function Card(props) {
@@ -71,8 +79,15 @@ export function Card(props) {
 </table>
          <Link to={`/detail/${props.id}`} style={{ textDecoration: "none", color: "white" }}><h2>{props.name}</h2></Link>
          {/*<h4>{props.status}</h4>*/}
-         <h4 style={styleSpecie}>{props.species}</h4>
-         <h4 style={styleGender}>{props.gender}</h4>
+<table>
+  <tr>
+    <td>
+      <h4 style={{...styleSpecie }}>{props.species}</h4>
+      <h4 style={{...styleGender }}>{props.gender}</h4>
+      <h4 style={{ ...styleGenders}}>{props.id}</h4>
+    </td>
+  </tr>
+</table>
          {/*<h4>{props.origin.name}</h4>*/}
          <img style={{display: "block"}} src={props.image} alt='' />
       </div>

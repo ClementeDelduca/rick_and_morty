@@ -24,12 +24,12 @@ const [userData, setUserData] = useState({
   }
 
   return <form onSubmit={handleSubmit}>
-        <label>Tu  Email:</label>
+        <label>Email:"ejemplo@gmail.com"</label>
         <input type="text" name="email" value={userData.email} onChange={handleChange}/>
         <p>{errors.email}</p>
 
 
-        <label>Password:</label>
+        <label>Tu Password:  "Password1%"</label>
         <input type="password" name="password" value={userData.password} onChange={handleChange}/>
         <p>{errors.password}</p>
         
